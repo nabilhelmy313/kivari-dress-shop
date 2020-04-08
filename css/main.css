@@ -1,0 +1,34 @@
+#logo{
+  margin-bottom: 30px;
+  padding-top: 30px;
+    
+}
+
+
+#nav a{
+  color: black;
+
+}
+#nav a:hover{
+  color: #bbb;
+  background-color: white;
+}
+.i {
+  color: #000;
+  
+}
+body{
+  background-color: white;
+}
+.menu-area{
+  position: static;
+  
+}
+.mega-area{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right:0;
+  border: 1px white;
+  
+}
