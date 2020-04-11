@@ -1,25 +1,27 @@
+body{
+  background-color: white;
+}
 #logo{
   margin-bottom: 30px;
   padding-top: 30px;
     
 }
 
-
-#nav a{
-  color: black;
-
+#mainnav li a{
+  color: burlywood;
 }
-#nav a:hover{
-  color: #bbb;
-  background-color: white;
+#mainnav li a:hover{
+  color: chocolate;
 }
+
 .i {
-  color: #000;
-  
+  color: burlywood;
 }
-body{
-  background-color: white;
+.i:hover{
+  color: chocolate;
 }
+
+/* mega menu style */
 .menu-area{
   position: static;
   
@@ -30,5 +32,38 @@ body{
   left: 0;
   right:0;
   border: 1px white;
-  
 }
+/* end magea menu style */
+
+/* size dropdown style */
+
+.sizehead{
+  position: static;
+}
+
+/* .sizehead > ul{     
+  width: 300%;      
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+} */
+
+.sizehead .size{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  color: #000;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);    
+}
+
+.size > li a{
+  color: #000;
+}
+.size >li a:hover{
+  color: #bbb;
+}
+/*end size dropdown style */
+

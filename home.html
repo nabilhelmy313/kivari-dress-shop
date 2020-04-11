@@ -25,7 +25,7 @@
     </head>
     <body>
         <!-- header -->
-        <header class="container-fluid bg-white mb-2">
+        <header class="container-fluid mb-2">
             <!-- logo -->
             <div class="container" id="logo">
                 <center>
@@ -37,17 +37,18 @@
             <!-- endlogo -->
             
             <!-- Navbar -->
-            <div class="row"  >
-                <nav class="navbar navbar-default navbar-expand-lg bg-white container-fluid " >
+            
+                <nav class="navbar navbar-expand-lg row " >
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars"
                      aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon" style="color: black;"></span>
+                     <i class="fas fa-ellipsis-h fa-lg"></i>
+                        
                     </button>
                   
-                    <div class="collapse navbar-collapse" id="navbars">
-                        <div id="nav">
-                            <ul class="navbar-nav ml-auto " >
+                    <div class="collapse navbar-collapse nav navbar-nav" id="navbars">
+                        <div class="mr-lg-auto ">
+                            <ul class="navbar-nav" id="mainnav" >
                                 <li class="nav-item" >
                                 <a class="nav-link" href="#">WHAT'S NEW <span class="sr-only">(current)</span></a>
                                 </li>
@@ -131,7 +132,7 @@
                                                     <li class="dropdown-item pl-0">
                                                         <h6 class="sub-title font-weight-bold white-text">SHOP THE COLLECTION</h6>
                                                     </li>
-                                                    <div class="dropdown-divider d-flex"></div>
+                                                    <div class="dropdown-divider"></div>
                                                     <li>
                                                     <a class="dropdown-item pl-0" href="# ">
                                                         VALENTINA II
@@ -159,7 +160,7 @@
                                                     <li class="dropdown-item pl-0">
                                                         <h6 class="sub-title font-weight-bold white-text">EDITS</h6>
                                                     </li>
-                                                    <div class="dropdown-divider d-flex"></div>
+                                                    <div class="dropdown-divider "></div>
                                                     <li>
                                                     <a class="dropdown-item pl-0" href="# ">
                                                         ISABELLA
@@ -196,7 +197,7 @@
                                                     <li class="dropdown-item pl-0">
                                                         <h6 class="sub-title font-weight-bold white-text">SALE</h6>
                                                     </li>
-                                                    <div class="dropdown-divider d-flex"></div>
+                                                    <div class="dropdown-divider"></div>
                                                     <li>
                                                     <a class="dropdown-item pl-0" href="# ">
                                                         SALE DRESSE
@@ -251,15 +252,15 @@
                             </ul>
                         </div>
 
-                        <div class="offset-lg-5" id="form">                    
-                            <form class="form-inline my-2 my-lg-0 ml-5" >
-                                <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-sm  my-2 mr-2 my-sm-0" type="submit"><i class="fa fa-search i"></i></button>
-                                <select class="form-control form-control-sm mr-2" >
+                        <div class="nav navbar-nav " id="form">                    
+                            <form class="form-inline my-2 my-lg-0 ml-lg-5" >
+                                <input class=" form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-sm  my-sm-0" type="submit"><i class="fa fa-search i"></i></button>
+                                <select class="form-control-sm mr-2" >
                                     <option>AUD</option>
                                     <option>NZD</option>
                                 </select>
-                                <i class="far fa-user mr-2 i"><a href="#"></a></i>
+                                <i class="far fa-user mr-2  i"><a href="#"></a></i>
                                 <i class="far fa-heart mr-2 i" ><a href="#"></a></i>
                                 <i class="fas fa-shopping-bag i"><a href="#"></a></i>
                             </form>
@@ -267,17 +268,123 @@
                     </div>
 
                 </nav>
-            </div>
+                
             <!-- endnavbar -->
             
         </header>
         <!-- endheader -->
-        <main>
-            <div class="row">
+        <main">
+            <div class="mb-5">
                 <img src="img/ISABELLA_HOMEPAGE_BANNERS_01-3_1400x.progressive.png.jpg" style="width: 100%;" >
             </div>
+            <!-- comboboxs -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-4">
+                        <ul class="list-unstyled">
+                            <li class="sizehead dropdown">
+                                <a href="#" class="btn btn-outline-secondary  px-md-3" data-toggle="dropdown" id="size">
+                                    SIZE <i class="fa fa-chevron-down ml-md-2"></i><i class="fa fa-chevron-up  ml-md-2"></i>
+                                </a>
+                                <ul class="size dropdown-menu list-unstyled" aria-labelledby="size">
+                                    <li>
+                                    <input type="checkbox" class=""> <a>XXS</a>    
+                                    </li>
+                                    <li class="">
+                                        <input type="checkbox" class=""> <a>XS</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a >S</a>    
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <input type="checkbox" class=""><a>M</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a>L</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a>XL</a>    
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <a href="#" class="btn btn-light btn-outline-dark">APPLY</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-4">
+                        <ul class="list-unstyled">
+                            <li class="sizehead dropdown">
+                                <a href="" class="btn btn-outline-secondary  px-md-3" data-toggle="dropdown" id="price">
+                                    PRICE <i class="fa fa-chevron-down  ml-md-2"></i><i class="fa fa-chevron-up  ml-md-2"></i>
+                                </a>
+                                <ul class="size dropdown-menu list-unstyled bg-secondary " aria-labelledby="price">
+                                    <li>
+                                    <input type="checkbox" class=""> <a href="#">UNDER 100.00 $</a>    
+                                    </li>
+                                    <li class="col-md-4">
+                                        <input type="checkbox" class=""> <a href="#">100.00$ TO 200.00</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a href="#">200$ TO 300$</a>    
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offset-md-2 col-md-2 col-4">
+                        <ul class="list-unstyled">
+                            <li class="sizehead">
+                                <a href="" class="btn btn-outline-secondary  px-md-3">
+                                    SIZE <i class="fa fa-chevron-down  ml-md-2"></i><i class="fa fa-chevron-up  ml-md-2"></i>
+                                </a>
+                                <ul class="size list-unstyled bg-secondary ">
+                                    <li>
+                                    <input type="checkbox" class=""> <a href="#">XXS</a>    
+                                    </li>
+                                    <li class="col-md-4">
+                                        <input type="checkbox" class=""> <a href="#">XS</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a href="#">S</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a href="#">M</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a href="#">L</a>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" class=""><a href="#">XL</a>    
+                                    </li>
+                                    <li>
+                                        <a href="#" class="btn btn-light">APPLY</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
 
+            <div class="row">
+
+                <div class="card col-md-4">
+                    <img src="img/ISABELLA_HOMEPAGE_BANNERS_01-3_1400x.progressive.png.jpg" alt="">
+                </div>
+                <div class="card col-md-4">
+                    <img src="img/ISABELLA_HOMEPAGE_BANNERS_01-3_1400x.progressive.png.jpg" alt="">
+                </div>
+                <div class="card col-md-4">
+                    <img src="img/ISABELLA_HOMEPAGE_BANNERS_01-3_1400x.progressive.png.jpg" alt="">
+                </div>
+            </div>
+            
+            <!--end comboboxs -->
         </main>
-        <!-- endheader -->
+        <script src="js/home.js"></script>
+            
     </body>
 </html>
